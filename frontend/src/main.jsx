@@ -5,13 +5,21 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import App from './App';
+import Home from './components/Home';
+import Error from './components/Error';
 
 // We are defining rules for our router
 const router = createBrowserRouter([
     {
       path: "/",
       element: <App />,
-      errorElement: <div>Not found!</div>,
+      errorElement: <Error />,
+      children: [
+        {
+            path: "",
+            element: <Home />,
+        }
+      ]
     },
 ]);
 

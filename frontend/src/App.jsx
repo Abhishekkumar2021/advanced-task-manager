@@ -1,9 +1,11 @@
-import './App.css'
+import { Outlet } from 'react-router-dom'
+import Navbar from './components/Navbar'
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello to my App </h1>
+    <div className="bg-zinc-100 w-full min-h-screen flex flex-col">
+      <Navbar />
+      <Outlet />
     </div>
   )
 }
