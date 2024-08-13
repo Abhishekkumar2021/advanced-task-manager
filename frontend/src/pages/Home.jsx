@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="w-full bg-taskbg bg-center p-4 flex-1 gap-20 flex flex-col justify-center items-center">
+    <div className="w-full p-4 flex-1 gap-20 flex flex-col justify-center items-center">
       <div className="text-center">
           <h1 className="text-5xl font-bold mb-10">Stay Organized, Stay Ahead</h1>
           <p className="text-xl mt-2"><span className="text-3xl bg-zinc-800 text-white px-3 rounded-md">Advanced Task Manager</span> - Your Ultimate Tool for Managing Tasks Efficiently</p>

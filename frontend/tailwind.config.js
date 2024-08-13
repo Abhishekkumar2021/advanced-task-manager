@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        'taskbg': "url('./src/assets/taskbg.svg')",
+        'taskbg': "url('/src/assets/taskbg.svg')",
       }
     },
   },

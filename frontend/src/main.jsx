@@ -5,8 +5,9 @@ import {
     RouterProvider,
 } from "react-router-dom";
 import App from './App';
-import Home from './components/Home';
-import Error from './components/Error';
+import Home from './pages/Home';
+import Error from './pages/Error';
+import Category from './pages/Category';
 
 // We are defining rules for our router
 const router = createBrowserRouter([
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
         {
             path: "",
             element: <Home />,
+        },
+        {
+          path: "categories/:id",
+          element: <Category />,
         }
       ]
     },
