@@ -17,7 +17,7 @@ export default function Category() {
 
     return (
         <div className='flex-1 p-8 flex flex-col items-center gap-6'>
-            <h1 className='rounded-md shadow-md bg-white text-3xl font-bold px-5 py-2'>{category.title}</h1>
+            <h1 className='text-3xl bg-zinc-800 text-white px-12 py-3 text-center'>{category.title}</h1>
             <div className='flex flex-1 w-full gap-2 flex-col items-center'>
                 <div className='w-4/6 p-8'>
                     <h2 className='font-bold text-2xl mb-2 '>
