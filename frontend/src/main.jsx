@@ -9,6 +9,8 @@ import Home from './pages/Home';
 import Error from './pages/Error';
 import Category from './pages/Category';
 import Categories from './pages/Catgories';
+import Task from './pages/Task';
+import Tasks from './pages/Tasks';
 
 // We are defining rules for our router
 const router = createBrowserRouter([
@@ -28,6 +30,14 @@ const router = createBrowserRouter([
         {
           path: "categories/:id",
           element: <Category />,
+        },
+        {
+          path: "tasks",
+          element: <Tasks />,
+        },
+        {
+          path: "tasks/:id",
+          element: <Task />,
         }
       ]
     },
