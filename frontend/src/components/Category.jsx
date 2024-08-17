@@ -10,8 +10,8 @@ export default function Category(props){ // props is an object that contains the
                 <p className='text-sm text-zinc-600'>{category.description.substring(0, 100)}...</p> :
                 <p className='text-sm text-zinc-600'>{category.description}</p>
             }
-            <p><span className='px-3 rounded-full py-1 bg-zinc-800 text-white'>{category.completed}</span> out of <span className='px-3 rounded-full py-1 bg-zinc-800 text-white'>{category.tasks}</span> tasks completed</p>
-            <Link to={`/categories/${category.id}`} className='bg-zinc-800 text-white px-8 rounded-3xl text-sm py-2 mx-auto mt-6'>
+            <p><span className='px-3 rounded-full py-1 text-sm bg-zinc-800 text-white'>{category.completed}</span> out of <span className='px-3 text-sm rounded-full py-1 bg-zinc-800 text-white'>{category.tasks}</span> tasks completed</p>
+            <Link to={`/categories/${category.id}`} className='ring ring-blue-600 ring-offset-2 bg-blue-600 text-white px-8 rounded-3xl text-md  py-2 mx-auto mt-6 hover:ring-offset-0'>
                 Know More
             </Link>
         </div>

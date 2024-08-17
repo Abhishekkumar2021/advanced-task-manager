@@ -1,6 +1,6 @@
 //  /tasks/:id
 
-import { useParams } from "react-router-dom"
+import { Link, useParams } from "react-router-dom"
 import { TbTargetArrow } from "react-icons/tb";
 
 export default function Task() {
@@ -50,8 +50,7 @@ export default function Task() {
                         <p className={task.status === 'COMPLETE' ? "text-3xl mt-2 text-green-600" : "text-3xl mt-2 text-red-600"}>
                             {task.status}
                         </p>
-                    </div>
-                    
+                    </div> 
                     <div className='p-3 shadow-md bg-white rounded-md w-64'>
                         <h3 className='text-xl'>
                             Created at
@@ -68,6 +67,15 @@ export default function Task() {
                             {task.updatedAt}
                         </p>
                     </div>
+                    <div className='p-3 shadow-md bg-white rounded-md w-64'>
+                        <h3 className='text-xl mb-2'>
+                            Category
+                        </h3>
+                        <Link to={`/categories/${task.category.id}`} className='text-blue-600 text-2xl hover:underline'>
+                            {task.category.title}
+                        </Link>
+                    </div>
+                    
                 </div>
             </div>
         </div>
