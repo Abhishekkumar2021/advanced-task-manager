@@ -1,1 +1,1 @@
-# This is the repository that contains the complete code base for the **Advanced Task Manage
+# This is the repository that contains the complete code base for the **Advanced Task Manager**
